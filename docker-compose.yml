@@ -22,3 +22,14 @@ services:
       - DEBUG_ZDP=0
       - DEBUG_OTAU=0
       - TZ=Europe/Oslo
+
+  telegraf:
+    build: ./balena-telegraf
+    pid: "host"
+    network_mode: "host"
+    privileged: true
+    labels:
+      io.resin.features.balena-socket: '1'
+    environment:
+      - INFLUX_URL=http://influxdb.hjemme.nett:8086
+      - INFLUX_DB=telegraf
