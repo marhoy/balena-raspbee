@@ -6,7 +6,7 @@ volumes:
 services: 
 
   deconz:
-    image: marthoc/deconz:armhf
+    image: marthoc/deconz:armhf-2.05.71
     network_mode: host
     restart: always
     volumes:
