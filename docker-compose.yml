@@ -31,5 +31,5 @@ services:
     labels:
       io.resin.features.balena-socket: '1'
     environment:
-      - INFLUX_URL=http://influxdb.hjemme.nett:8086
+      - INFLUX_URL=http://10.0.1.202:8086
       - INFLUX_DB=telegraf
