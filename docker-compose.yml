@@ -3,10 +3,10 @@ version: "2.1"
 volumes:
   deconz-data:
 
-services: 
+services:
 
   deconz:
-    image: marthoc/deconz:armhf-2.07.01
+    image: marthoc/deconz:armhf-2.09.03
     network_mode: host
     restart: always
     volumes:
