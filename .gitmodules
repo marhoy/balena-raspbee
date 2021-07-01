@@ -1,3 +1,6 @@
 [submodule "balena-telegraf"]
 	path = balena-telegraf
 	url = git@github.com:marhoy/balena-telegraf.git
+[submodule "balena-dns"]
+	path = balena-dns
+	url = https://github.com/willswire/balena-dns.git
