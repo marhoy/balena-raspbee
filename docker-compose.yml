@@ -6,11 +6,11 @@ volumes:
 services:
 
   deconz:
-    image: marthoc/deconz:armhf-2.12.06
+    image: deconzcommunity/deconz:2.13.04
     network_mode: host
     restart: always
     volumes:
-      - "deconz-data:/root/.local/share/dresden-elektronik/deCONZ"
+      - "deconz-data:/opt/deCONZ"
     devices:
       - /dev/ttyAMA0
     environment:
