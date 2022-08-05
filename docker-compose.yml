@@ -6,7 +6,7 @@ volumes:
 services:
 
   deconz:
-    image: deconzcommunity/deconz:2.14.01
+    image: deconzcommunity/deconz:2.15.03
     network_mode: host
     restart: always
     volumes:
